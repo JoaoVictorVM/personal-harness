@@ -1,0 +1,1 @@
+Execute the product described in `.planning/PRD.md` with scope `product`, interaction `autonomous`, destination `github` and profile `strict`. Follow `AGENTS.md`. Use Orca-managed worktrees, per-feature spec and code review, exhaustive validation, green CI and merge commits. Preserve blocked worktrees and stop at human gates or missing authority.

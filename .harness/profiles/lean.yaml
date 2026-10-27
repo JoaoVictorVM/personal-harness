@@ -1,0 +1,7 @@
+name: lean
+spec_review: risk-based
+validation: smoke
+code_review: final
+commits: compact-semantic
+worktree: always-for-autonomous-github
+final_qa: product

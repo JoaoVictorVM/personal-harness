@@ -1,0 +1,25 @@
+name: Feature request
+description: Proponha uma melhoria para o harness
+title: "[Feature] "
+labels: [enhancement]
+assignees: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qual problema de fluxo, qualidade ou contexto deve ser resolvido?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Explique a solucao e os perfis afetados.
+    validations:
+      required: true
+  - type: textarea
+    id: token-impact
+    attributes:
+      label: Impacto no contexto
+      description: A proposta aumenta ou reduz comandos, agentes e tokens?

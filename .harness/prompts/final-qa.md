@@ -1,0 +1,1 @@
+Run the final quality workflow for the requested scope. Execute deterministic checks first with compact output. Create the final QA reviewer only when required by the profile, risk or failing evidence. Do not modify code in the reviewer context.

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Harness runtime artifacts
+.harness/runtime/
+
+# Project-specific planning generated after installation
+.planning/features/
+.planning/changes/
+.planning/decisions/
+.planning/commit-plans/
+.planning/archive/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary and packaged output
+*.tmp
+*.log
+dist/
+build/
+*.zip

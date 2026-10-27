@@ -1,0 +1,7 @@
+name: manual-classic
+spec_review: manual
+validation: feature
+code_review: manual
+commits: atomic
+worktree: auto
+final_qa: manual

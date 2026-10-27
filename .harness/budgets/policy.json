@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "provider_thresholds": {
+    "warning_percent": 70.0,
+    "human_gate_percent": 85.0,
+    "hard_stop_percent": 95.0
+  },
+  "execution_limits": {
+    "input_tokens": 500000,
+    "output_tokens": 120000,
+    "estimated_cost_usd": 20.0
+  },
+  "checkpoints": [
+    "before-feature",
+    "before-parallel-agents",
+    "before-review",
+    "before-expensive-validation",
+    "after-feature"
+  ],
+  "provider_usage_unavailable": "use-execution-budget",
+  "require_reservation_for_parallel_agents": true,
+  "allow_override_below_hard_stop": true
+}

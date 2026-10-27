@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "active_provider": "platform",
+  "providers": {
+    "platform": {
+      "adapter": "agent-tool",
+      "usage_tool": null,
+      "notes": "configure a ferramenta de uso exposta pela plataforma, quando existir"
+    },
+    "openai": {
+      "adapter": "external",
+      "usage_tool": null,
+      "notes": "configure somente uma fonte oficial que retorne a cota aplicavel"
+    },
+    "anthropic": {
+      "adapter": "external",
+      "usage_tool": null,
+      "notes": "configure somente uma fonte oficial que retorne a cota aplicavel"
+    }
+  }
+}

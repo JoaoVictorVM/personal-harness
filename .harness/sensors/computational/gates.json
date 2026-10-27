@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "profiles": {
+    "smoke": [],
+    "feature": [],
+    "full": []
+  },
+  "notes": {
+    "smoke": "Fast build, typecheck, lint or targeted test commands for each lean feature.",
+    "feature": "Feature or wave integration commands.",
+    "full": "Complete product validation commands. Add project commands as strings."
+  }
+}

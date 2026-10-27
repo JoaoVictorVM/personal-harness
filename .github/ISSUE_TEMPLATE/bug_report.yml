@@ -1,0 +1,36 @@
+name: Bug report
+description: Relate um comportamento incorreto do harness
+title: "[Bug] "
+labels: [bug]
+assignees: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Descreva o comportamento observado e o esperado.
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Perfil
+      options:
+        - manual-classic
+        - lean
+        - strict
+        - nao se aplica
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducao minima
+      description: Remova credenciais, caminhos pessoais, PRDs reais e outros dados sensiveis.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Sistema operacional, versao do Python, agente e versao do harness.

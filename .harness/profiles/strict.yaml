@@ -1,0 +1,7 @@
+name: strict
+spec_review: always
+validation: phase-and-feature
+code_review: per-feature
+commits: compact-semantic
+worktree: always-for-autonomous-github
+final_qa: product

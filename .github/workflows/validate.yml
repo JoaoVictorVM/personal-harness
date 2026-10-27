@@ -1,0 +1,35 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check public repository
+        run: python scripts/repository_check.py
+
+      - name: Compile scripts
+        run: python -m compileall -q .harness/scripts scripts
+
+      - name: Run harness regressions
+        run: python .harness/scripts/self_test.py
+
+      - name: Run harness doctor
+        run: python .harness/scripts/harness.py doctor
+
+      - name: Validate model routing
+        run: python .harness/scripts/model_router.py validate

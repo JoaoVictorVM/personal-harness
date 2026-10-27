@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "default_provider": "platform",
+  "unavailable_behavior": "inherit",
+  "tiers": {
+    "efficient": {"purpose": "documents and low-risk classification", "fallback_tier": "balanced"},
+    "balanced": {"purpose": "orchestration and ordinary implementation", "fallback_tier": "strong"},
+    "strong": {"purpose": "complex implementation and high-impact decisions", "fallback_tier": null},
+    "review": {"purpose": "independent final or high-risk review", "fallback_tier": "strong"}
+  },
+  "task_routes": {
+    "prd-writer": {"tier": "strong", "preferred_model": null},
+    "spec-writer": {"tier": "efficient", "preferred_model": null},
+    "product-orchestrator": {"tier": "balanced", "preferred_model": null},
+    "implement-feature": {"tier": "balanced", "preferred_model": null},
+    "implement-feature-high-risk": {"tier": "strong", "preferred_model": null},
+    "final-qa": {"tier": "review", "preferred_model": null},
+    "change-intake": {"tier": "efficient", "preferred_model": null},
+    "commit-manager": {"tier": "efficient", "preferred_model": null}
+  },
+  "providers": {
+    "platform": {"efficient": null, "balanced": null, "strong": null, "review": null},
+    "anthropic": {"efficient": null, "balanced": null, "strong": null, "review": null},
+    "openai": {"efficient": null, "balanced": null, "strong": null, "review": null}
+  }
+}
